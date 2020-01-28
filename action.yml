@@ -1,0 +1,11 @@
+name: 'Set Kubeconfig'
+author: 'Aravindan Ve <aravindan.ve@outlook.com>'
+description: 'Sets kubeconfig'
+inputs:
+  kubeconfig:
+    description: 'Kubeconfig file in yaml format'
+    required: true
+    default: ''
+runs:
+  using: 'node12'
+  main: 'index.js'

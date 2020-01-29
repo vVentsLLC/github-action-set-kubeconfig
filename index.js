@@ -5,9 +5,6 @@ const io = require('@actions/io')
 
 async function run() {
   const kubeconfig = core.getInput('kubeconfig')
-
-  core.debug(`kubeconfig input: \n${kubeconfig}}`)
-
   const fileDir = `/tmp/set_kubeconfig_${Date.now()}`
   const fileName = 'config'
   const filePath = path.join(fileDir, fileName)
